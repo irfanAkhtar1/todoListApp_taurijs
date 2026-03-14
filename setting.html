@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="setting.css" />
+</head>
+
+<body>
+
+  <h1>Settings</h1>
+
+  <button class="add">Add</button>
+  <button class="edit">Edit</button>
+  <button class="back">Back</button>
+
+  <!-- Add Task Form -->
+  <div id="addTaskForm" style="display:none; margin-bottom: 1em;">
+    <input type="text" id="mainTaskInput" placeholder="Main Task" />
+    <input type="text" id="subTasksInput" placeholder="Subtasks (comma separated)" />
+    <button id="saveTaskBtn">Save</button>
+  </div>
+
+  <!-- Edit Task Form -->
+  <div id="editTaskForm" style="display:none; margin-top: 1em;">
+    <select id="taskSelector"></select>
+    <input type="text" id="editMainTask" placeholder="Edit Main Task" />
+    <input type="text" id="editSubTasks" placeholder="Edit Subtasks (comma separated)" />
+    <button id="updateTaskBtn">Update</button>
+    <button id="deleteTaskBtn">Delete Task</button>
+  </div>
+
+  <h3>TextColor: </h3>
+  <input type="color" class="fontColor">
+
+  <h3>BarColor1: </h3>
+  <input type="color" class="barColor1">
+
+  <h3>BarColor2: </h3>
+  <input type="color" class="barColor2">
+
+  <h3>CheckColor: </h3>
+  <input type="color" class="checkColor">
+
+  <button class="SetColorBtn">OK</button>
+
+  <h3>Window Position:</h3>
+  <label for="posX">X:</label>
+  <input type="number" id="posX" placeholder="0">
+  <label for="posY">Y:</label>
+  <input type="number" id="posY" placeholder="0">
+  <button id="setPosBtn">Set Position</button>
+
+  <button id="lockToggle">🔓 Lock Position</button>
+
+  <label for="opacity">Opacity:</label>
+  <input type="range" id="opacity" min="30" max="100" value="100">
+  <span id="opacity-value">100%</span>
+
+  <script src="app.js" defer></script>
+</body>
+
+</html>
