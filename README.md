@@ -47,7 +47,7 @@ All buttons are invisible by default and only show up when you hover — keeping
 
 ## How to install
 
-1. Grab the `.exe` from [Releases](#)
+1. Grab the `.exe` from [Releases](https://github.com/irfanAkhtar1/todoListApp_taurijs/releases/tag/installer)
 2. Run it
 3. Drag the widget wherever you want on your desktop
 4. Hover to reveal the buttons
